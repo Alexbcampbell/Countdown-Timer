@@ -12,7 +12,7 @@ function timer(seconds) {
   displayEndTime(then);
 
   setInterval(() => {
-    const secondsLeft = Math.round(then - Date.now()) / 1000;
+    const secondsLeft = Math.round((then - Date.now()) / 1000);
     //check if timer should stop.
     if (secondsLeft < 0) {
       clearInterval(countdown);
